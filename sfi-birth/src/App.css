@@ -1,0 +1,85 @@
+
+
+.app-bg {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+	padding: 0;
+}
+
+
+.gift-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	transition: transform 0.2s;
+	max-width: 90vw;
+}
+.gift-container:hover {
+	transform: scale(1.08);
+}
+.click-text {
+	margin-top: 16px;
+	font-size: 1.2rem;
+	color: #B8860B;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	text-align: center;
+	max-width: 90vw;
+}
+
+
+.celebrate-bg {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: repeating-linear-gradient(45deg, #ff69b4, #ffd700 20px, #43c6ac 40px);
+	animation: rainbow 2s linear infinite;
+	padding: 0;
+}
+
+@keyframes rainbow {
+	0% { filter: hue-rotate(0deg); }
+	100% { filter: hue-rotate(360deg); }
+}
+
+
+.celebrate-message {
+	text-align: center;
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	text-shadow: 2px 2px 8px #B8860B, 0 0 20px #ff69b4;
+	max-width: 90vw;
+	word-break: break-word;
+}
+
+@media (max-width: 600px) {
+	.gift-container svg {
+		width: 70vw;
+		height: auto;
+		max-width: 300px;
+	}
+	.celebrate-message {
+		font-size: 1.5rem;
+		padding: 0 10px;
+	}
+	.click-text {
+		font-size: 1rem;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 900px) {
+	.gift-container svg {
+		width: 40vw;
+		height: auto;
+		max-width: 200px;
+	}
+	.celebrate-message {
+		font-size: 2rem;
+	}
+}
