@@ -26,7 +26,7 @@ function App() {
     <div className={celebrate ? 'celebrate-bg' : 'app-bg'}>
       <audio
         ref={audioRef}
-        src="../public/happy-birthday.mp3"
+        src="/happy-birthday.mp3"
         preload="auto"
         style={{ display: 'none' }}
       />
